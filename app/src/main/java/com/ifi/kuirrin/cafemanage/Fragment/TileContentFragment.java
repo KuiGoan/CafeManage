@@ -15,6 +15,9 @@ import android.view.ViewGroup;
 import com.ifi.kuirrin.cafemanage.Adapter.ContentAdapter;
 import com.ifi.kuirrin.cafemanage.R;
 
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Provides UI for the view with Cards.
  */
@@ -24,7 +27,12 @@ public class TileContentFragment extends Fragment {
                              Bundle savedInstanceState) {
         RecyclerView recyclerView = (RecyclerView) inflater.inflate(
                 R.layout.recycler_view, container, false);
-        ContentAdapter adapter = new ContentAdapter();
+
+        List<String> list = new ArrayList<>();
+        for (int i = 0; i < 20; i++) {
+            list.add("Item " + i);
+        }
+        ContentAdapter adapter = new ContentAdapter(list);
         recyclerView.setAdapter(adapter);
         recyclerView.setHasFixedSize(true);
 

@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <item name="main_content" type="id"></item>
-    <item name="appbar" type="id"></item>
-    <item name="toolbar" type="id"></item>
-    <item name="tabs" type="id"></item>
-    <item name="viewpager" type="id"></item>
+    <item name="main_content" type="id"/>
+    <item name="appbar" type="id"/>
+    <item name="toolbar" type="id"/>
+    <item name="tabs" type="id"/>
+    <item name="viewpager" type="id"/>
+
+    <item name="title" type="id"/>
 
 </resources>
